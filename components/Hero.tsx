@@ -44,7 +44,9 @@ export const Hero: React.FC = () => {
                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </a>
               <a 
-                href="#"
+                href="https://youtu.be/qL-Uc7SY1c0"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full sm:w-auto px-6 py-4 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 hover:border-slate-600 rounded-xl font-semibold transition-all flex items-center justify-center gap-3 group"
               >
                 {/* Special Video Badge */}
@@ -61,13 +63,12 @@ export const Hero: React.FC = () => {
             <div className="relative rounded-2xl border border-slate-700 bg-slate-800/50 p-2 shadow-2xl backdrop-blur-sm group">
               <div className="absolute -inset-1 bg-gradient-to-r from-brand-600 to-indigo-600 rounded-3xl opacity-20 blur-lg group-hover:opacity-30 transition-opacity duration-500"></div>
               
-              {/* NOTE: Updated with a reliable Unsplash ID matching the description */}
               <img 
-                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=1200&auto=format&fit=crop"
-                alt="Operadora profissional a utilizar o terminal de vendas VêluPOS numa loja moderna" 
+                src="https://sol.dolisys.com/img/VeluPOS_Loja.png"
+                alt="Interface do VêluPOS em funcionamento numa loja moderna" 
                 className="relative rounded-xl w-full h-auto shadow-inner border border-slate-800 object-cover aspect-[4/3]"
                 onError={(e) => {
-                  // Fallback to a generic POS image if the main one fails
+                  // Fallback to a generic POS image if the custom one fails to load
                   e.currentTarget.src = "https://images.unsplash.com/photo-1556740758-90de374c12ad?q=80&w=1200&auto=format&fit=crop";
                 }}
               />
