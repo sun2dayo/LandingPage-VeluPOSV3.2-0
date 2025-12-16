@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-PT" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VêluPOS v3.2.0 - O POS que nunca para</title>
+    <meta name="description" content="Venda Offline, Sincronize Online. O cliente oficial para Dolisys ERP." />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              slate: {
+                850: '#151e2e',
+                900: '#0f172a',
+                950: '#020617',
+              },
+              brand: {
+                300: '#a5b4fc', // Indigo 300
+                400: '#818cf8', // Indigo 400
+                500: '#6366f1', // Indigo 500
+                600: '#4f46e5', // Indigo 600
+                700: '#4338ca', // Indigo 700
+              }
+            },
+            backgroundSize: {
+              '300%': '300%',
+            },
+            animation: {
+              gradient: 'animatedgradient 6s ease infinite alternate',
+            },
+            keyframes: {
+              animatedgradient: {
+                '0%': { backgroundPosition: '0% 50%' },
+                '50%': { backgroundPosition: '100% 50%' },
+                '100%': { backgroundPosition: '0% 50%' },
+              },
+            },
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #020617; /* Slate 950 */
+        color: #f8fafc; /* Slate 50 */
+      }
+      .glass-panel {
+        background: rgba(15, 23, 42, 0.6);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .glass-nav {
+        background: rgba(2, 6, 23, 0.8);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
