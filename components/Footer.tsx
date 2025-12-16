@@ -28,9 +28,30 @@ export const Footer: React.FC = () => {
         <div className="border-t border-slate-900 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-600">
           <p>© {new Date().getFullYear()} NovaDX Solutions. Todos os direitos reservados.</p>
           <div className="flex gap-6 mt-4 md:mt-0">
-            <a href="#" className="hover:text-slate-400">Privacidade</a>
-            <a href="#" className="hover:text-slate-400">Termos</a>
-            <a href="#" className="hover:text-slate-400">Suporte</a>
+            <a 
+              href="https://dolisys.st/politica-de-privacidade/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-slate-400"
+            >
+              Privacidade
+            </a>
+            <a 
+              href="https://dolisys.st/termos-de-servicos/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-slate-400"
+            >
+              Termos
+            </a>
+            <a 
+              href="https://sol.dolisys.com/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-slate-400"
+            >
+              Suporte
+            </a>
           </div>
         </div>
       </div>
