@@ -16,7 +16,7 @@ export const Features: React.FC = () => {
       bg: "bg-blue-500/10",
       items: [
         { text: "Vendas Multi-Aba: Atenda vários clientes simultaneamente sem perder o carrinho.", icon: Zap },
-        { text: "Leitura de Código de Barras Instantânea e compatibilidade com balanças.", icon: ScanBarcode },
+        { text: "Leitura de Código de Barras Instantânea.", icon: ScanBarcode },
         { text: "Quick Pay: Finalize vendas a dinheiro em 1 clique para filas rápidas.", icon: MouseEvent }
       ]
     },
@@ -28,7 +28,7 @@ export const Features: React.FC = () => {
       bg: "bg-emerald-500/10",
       items: [
         { text: "Abertura e Fecho de Caixa (Z-Report) com contagem cega.", icon: FileSpreadsheet },
-        { text: "Pagamentos Múltiplos (Split): Dinheiro, Cartão e MBWay na mesma venda.", icon: Percent },
+        { text: "Pagamentos Múltiplos (Split): Dinheiro e Cartão na mesma venda.", icon: Percent },
         { text: "Gestão de Dívidas: Conta Corrente de clientes integrada no POS.", icon: FileText }
       ]
     },
@@ -53,7 +53,7 @@ export const Features: React.FC = () => {
       items: [
         { text: "Mapa de Mesas Visual com status (Livre, Ocupada, A pagar).", icon: Map },
         { text: "Gestão de Zonas distintas (Esplanada, Sala, Balcão).", icon: Coffee },
-        { text: "Impressão de pedidos direta para impressoras de cozinha.", icon: Utensils }
+        { text: "Envio de pedidos para a cozinha em tempo real.", icon: Utensils }
       ]
     }
   ];

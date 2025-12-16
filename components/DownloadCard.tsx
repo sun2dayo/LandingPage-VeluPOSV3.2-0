@@ -26,7 +26,7 @@ export const DownloadCard: React.FC = () => {
             </div>
             
             <p className="mt-6 text-sm text-indigo-200">
-              Versão 3.2.0 • Build 2405 • 64-bit Installer (45MB)
+              Versão 3.2.0 • Build 2405 • 64-bit Installer (78MB)
             </p>
           </div>
         </div>

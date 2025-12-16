@@ -13,7 +13,7 @@ export const Benefits: React.FC = () => {
     },
     {
       title: "Segurança & PIN Supervisor",
-      description: "Proteja as suas margens. Defina quem pode anular vendas, oferecer descontos ou abrir a gaveta. Ações sensíveis exigem PIN de Supervisor e ficam registadas.",
+      description: "Proteja as suas margens. Defina quem pode anular vendas ou oferecer descontos. Ações sensíveis exigem PIN de Supervisor e ficam registadas.",
       icon: ShieldCheck,
       color: "text-emerald-400",
       bg: "bg-emerald-500/10",
