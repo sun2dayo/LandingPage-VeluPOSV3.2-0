@@ -61,12 +61,14 @@ export const Hero: React.FC = () => {
             <div className="relative rounded-2xl border border-slate-700 bg-slate-800/50 p-2 shadow-2xl backdrop-blur-sm group">
               <div className="absolute -inset-1 bg-gradient-to-r from-brand-600 to-indigo-600 rounded-3xl opacity-20 blur-lg group-hover:opacity-30 transition-opacity duration-500"></div>
               
+              {/* NOTE: Updated with a reliable Unsplash ID matching the description */}
               <img 
-                src="https://images.unsplash.com/photo-1664575602554-208c7a264381?q=80&w=1200&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=1200&auto=format&fit=crop"
                 alt="Operadora profissional a utilizar o terminal de vendas VêluPOS numa loja moderna" 
                 className="relative rounded-xl w-full h-auto shadow-inner border border-slate-800 object-cover aspect-[4/3]"
                 onError={(e) => {
-                  e.currentTarget.src = "https://placehold.co/1200x900/1e293b/ffffff?text=VêluPOS+em+Ação";
+                  // Fallback to a generic POS image if the main one fails
+                  e.currentTarget.src = "https://images.unsplash.com/photo-1556740758-90de374c12ad?q=80&w=1200&auto=format&fit=crop";
                 }}
               />
               
