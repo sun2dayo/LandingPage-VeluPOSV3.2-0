@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { Github, Twitter, Mail } from 'lucide-react';
+import { Mail } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (
@@ -19,9 +20,18 @@ export const Footer: React.FC = () => {
           </div>
           
           <div className="flex gap-6">
-            <a href="#" className="text-slate-500 hover:text-white transition-colors"><Github size={20} /></a>
-            <a href="#" className="text-slate-500 hover:text-white transition-colors"><Twitter size={20} /></a>
-            <a href="#" className="text-slate-500 hover:text-white transition-colors"><Mail size={20} /></a>
+            <a 
+              href="mailto:ola@dolisys.com" 
+              className="group flex items-center gap-3 px-4 py-2 bg-slate-900 hover:bg-slate-800 border border-slate-800 rounded-xl transition-all duration-300"
+              title="Contacte-nos via E-mail"
+            >
+              <span className="text-slate-500 group-hover:text-brand-400 transition-colors">
+                <Mail size={20} />
+              </span>
+              <span className="text-sm font-medium text-slate-400 group-hover:text-white transition-colors">
+                ola@dolisys.com
+              </span>
+            </a>
           </div>
         </div>
 
@@ -32,7 +42,7 @@ export const Footer: React.FC = () => {
               href="https://dolisys.st/politica-de-privacidade/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="hover:text-slate-400"
+              className="hover:text-slate-400 transition-colors"
             >
               Privacidade
             </a>
@@ -40,7 +50,7 @@ export const Footer: React.FC = () => {
               href="https://dolisys.st/termos-de-servicos/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="hover:text-slate-400"
+              className="hover:text-slate-400 transition-colors"
             >
               Termos
             </a>
@@ -48,7 +58,7 @@ export const Footer: React.FC = () => {
               href="https://sol.dolisys.com/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="hover:text-slate-400"
+              className="hover:text-slate-400 transition-colors"
             >
               Suporte
             </a>

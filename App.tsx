@@ -1,8 +1,10 @@
+
 import React from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { Benefits } from './components/Benefits';
 import { Features } from './components/Features';
+import { HardwareTrust } from './components/HardwareTrust';
 import { FAQ } from './components/FAQ';
 import { DownloadCard } from './components/DownloadCard';
 import { Footer } from './components/Footer';
@@ -13,9 +15,11 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        {/* Benefits focuses on "Killer Features" (Offline, Sync, etc) */}
+        {/* Benefícios focam nos diferenciais de performance */}
         <Benefits />
-        {/* Features is the large 4-category grid */}
+        {/* HardwareTrust reforça a compatibilidade física */}
+        <HardwareTrust />
+        {/* Features mostra a grelha completa de funções */}
         <Features />
         <FAQ />
         <DownloadCard />

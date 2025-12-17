@@ -1,5 +1,5 @@
 {
-  "name": "VêluPOS v3.2.0",
-  "description": "The official hybrid POS client for Dolisys ERP. Works 100% offline with automatic synchronization.",
+  "name": "VêluPOS v3.6.5",
+  "description": "The official hybrid POS client for Dolisys ERP. Works 100% offline with automatic synchronization. Now on version 3.6.5.",
   "requestFramePermissions": []
 }

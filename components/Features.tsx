@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { 
   ShoppingCart, Zap, ScanBarcode, 
@@ -17,7 +18,7 @@ export const Features: React.FC = () => {
       items: [
         { text: "Vendas Multi-Aba: Atenda vários clientes simultaneamente sem perder o carrinho.", icon: Zap },
         { text: "Leitura de Código de Barras Instantânea.", icon: ScanBarcode },
-        { text: "Quick Pay: Finalize vendas a dinheiro em 1 clique para filas rápidas.", icon: MouseEvent }
+        { text: "Quick Pay: Finalize vendas a dinheiro em 1 clique para filas rápidas.", icon: Zap }
       ]
     },
     {
@@ -53,7 +54,7 @@ export const Features: React.FC = () => {
       items: [
         { text: "Mapa de Mesas Visual com status (Livre, Ocupada, A pagar).", icon: Map },
         { text: "Gestão de Zonas distintas (Esplanada, Sala, Balcão).", icon: Coffee },
-        { text: "Envio de pedidos para a cozinha em tempo real.", icon: Utensils }
+        { text: "Envio de pedidos para a cozinha em tempo real (brevemente).", icon: Utensils }
       ]
     }
   ];
@@ -65,8 +66,9 @@ export const Features: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center mb-20">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Tudo o que o seu negócio precisa</h2>
-          <p className="text-slate-400 text-lg max-w-3xl mx-auto">
-            O VêluPOS não é apenas um software de faturação. É um sistema de gestão completo desenhado para simplificar o seu dia a dia.
+          <p className="text-slate-400 text-lg max-w-4xl mx-auto leading-relaxed">
+            O VêluPOS não é um software isolado. É a extensão nativa definitiva do sistema <span className="text-white font-semibold">Dolisys</span>. 
+            Enquanto o Dolisys oferece uma gestão completa em modo <span className="text-brand-400">SaaS (ERP e CRM)</span>, o VêluPOS atua como o componente de alta performance desenhado para simplificar e acelerar a operação no ponto de venda.
           </p>
         </div>
 

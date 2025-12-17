@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="pt-PT" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VêluPOS v3.2.0 - O POS que nunca para</title>
+    <title>VêluPOS v3.6.5 - O POS que nunca para</title>
     <meta name="description" content="Venda Offline, Sincronize Online. O cliente oficial para Dolisys ERP." />
     
     <!-- Fonts -->
@@ -39,6 +40,7 @@
             },
             animation: {
               gradient: 'animatedgradient 6s ease infinite alternate',
+              float: 'float 3s ease-in-out infinite',
             },
             keyframes: {
               animatedgradient: {
@@ -46,6 +48,10 @@
                 '50%': { backgroundPosition: '100% 50%' },
                 '100%': { backgroundPosition: '0% 50%' },
               },
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-12px)' },
+              }
             },
           }
         }
@@ -81,5 +87,6 @@
 </head>
   <body>
     <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>

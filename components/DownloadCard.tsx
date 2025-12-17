@@ -1,7 +1,10 @@
+
 import React from 'react';
-import { Download } from 'lucide-react';
+import { Download, Apple } from 'lucide-react';
 
 export const DownloadCard: React.FC = () => {
+  const downloadUrl = "https://github.com/sun2dayo/VeluPOS.exe/releases/download/V3.6.5/VeluPOS.Setup.3.6.5.exe";
+
   return (
     <section id="download" className="py-20 bg-slate-900">
       <div className="max-w-4xl mx-auto px-6">
@@ -12,21 +15,31 @@ export const DownloadCard: React.FC = () => {
           <div className="relative z-10">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Pronto para modernizar o seu negócio?</h2>
             <p className="text-indigo-100 text-lg mb-8 max-w-2xl mx-auto">
-              Baixe o VêluPOS v3.2.0 hoje e experimente a liberdade de vender sem depender da internet.
+              Baixe o VêluPOS v3.6.5 hoje e experimente a liberdade de vender sem depender da internet.
             </p>
             
-            <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <a 
-                href="https://github.com/sun2dayo/VeluPOS.exe/releases/download/V3.2.0/VeluPOS.Setup.3.2.0.exe"
-                className="px-8 py-4 bg-white text-brand-600 rounded-xl font-bold text-lg hover:bg-slate-50 transition-colors shadow-lg flex items-center justify-center gap-3"
-              >
-                <Download size={24} />
-                Download para Windows
-              </a>
+            <div className="flex flex-col items-center gap-6">
+              <div className="flex flex-col sm:flex-row justify-center gap-4 w-full sm:w-auto">
+                <a 
+                  href={downloadUrl}
+                  className="px-8 py-4 bg-white text-brand-600 rounded-xl font-bold text-lg hover:bg-slate-50 transition-colors shadow-lg flex items-center justify-center gap-3"
+                >
+                  <Download size={24} />
+                  Download para Windows
+                </a>
+              </div>
+              
+              <div className="flex items-center gap-3 px-5 py-2.5 bg-white/10 backdrop-blur-md rounded-full border border-white/20">
+                <Apple size={20} className="text-white" />
+                <span className="text-white/90 font-medium">Versão macOS</span>
+                <span className="px-2 py-0.5 bg-white text-brand-600 text-[10px] font-black uppercase tracking-widest rounded">
+                  Brevemente
+                </span>
+              </div>
             </div>
             
-            <p className="mt-6 text-sm text-indigo-200">
-              Versão 3.2.0 • Build 2405 • 64-bit Installer (78MB)
+            <p className="mt-8 text-sm text-indigo-200">
+              Versão 3.6.5 • Build 2405 • 64-bit Installer (78MB)
             </p>
           </div>
         </div>
